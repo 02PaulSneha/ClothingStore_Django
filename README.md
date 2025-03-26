@@ -65,7 +65,7 @@ Open your browser and navigate to http://127.0.0.1:8000/ to view the application
 
 Home Page: Explore featured clothes and categories.
 
-Product Details: Click on a tea product to view detailed information, reviews, and pricing.
+Product Details: Click on a cloth product to view detailed information, reviews, and pricing.
 
 
 ## Contributing
@@ -103,7 +103,7 @@ For any questions or suggestions, feel free to reach out:
 # Home Page Listing product catalog :
 ![image](https://github.com/user-attachments/assets/334fc122-94b0-4b7d-94bb-5bae2db88cba)
 
-# Description for each tea showing its' details, implemented using CSS cards :
+# Description for each cloths showing its' details, implemented using CSS cards :
 ![image](https://github.com/user-attachments/assets/77bb8e99-90c9-4559-b317-2f1a0ac10792)
 
 # Store Locator, implemented using django forms.
