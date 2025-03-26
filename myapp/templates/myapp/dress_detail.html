@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Dress Detail Page
+{% endblock title %}
+
+{% block content %}
+<div class="relative bg-cover bg-center p-6 rounded-xl shadow-md max-w-xl py-5 px-2 mx-auto mt-6" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-fxuRttH7QvAqz2HYieY-9i-XZVMcnSa1Q&s');">
+    <!-- Title -->
+    <h1 class="text-4xl font-extrabold mb-6 p-3 text-center  
+    bg-gradient-to-r from-orange-500 via-yellow-300 to-amber-900 
+    bg-clip-text text-transparent 
+    shadow-lg" style="font-family: 'Arial', sans-serif;">
+    Dress Details
+</h1>
+
+    <!-- Dress Image Section -->
+    <div class="flex justify-center mb-4">
+        <img class="rounded-lg shadow-md min-w-11 max-w-md mx-auto border-spacing-3 border-double" src="{{ dress.image.url }}" alt="{{ dress.name }}">
+    </div>
+
+    <!-- Dress Name -->
+    <h3 class="text-3xl font-semibold text-orange-900 font-serif text-center underline mb-6">{{ dress.name }}</h3>
+
+    <!-- Dress Description -->
+    <div class="max-w-3xl mx-auto mb-6 text-center p-4 ">
+        <p class="text-lg text-gray-800 font-mono leading-relaxed">
+            {{ dress.description }}
+        </p>
+    </div>
+
+    <!-- Price Section -->
+    <div class="text-2xl font-bold  text-center mb-8">
+        {{ dress.price }}  <!-- Assuming 'price' is a field in the model -->
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center">
+        <a href="{% url 'all_myapp' %}" class= "inline-flex items-center  w- justify-center px-2
+        py-1 border border-transparent text-sm font-medium
+        rounded-md text-white bg-blue-800 hover:bg-green-700
+        focus: outline-none focus: ring-2 focus: ring-offset-2
+        focus: ring-amber-800">
+            &larr; Back to Dresses List
+        </a>
+    </div>
+</div>
+{% endblock %}

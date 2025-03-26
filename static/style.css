@@ -1,0 +1,15 @@
+body {
+    background-image: url('"C:\Users\sneha\OneDrive\Desktop\images.jpeg"'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: #FFFFFF; /* Text color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF; /* Ensures text remains white on dark background */
+}

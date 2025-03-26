@@ -1,0 +1,69 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+    Home Page
+    {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    {% tailwind_css %}
+</head>
+<body class="bg-cover bg-center" style="background-image: url('{% static 'myapp/images/images.jpeg' %}');">
+
+    <nav class=" text-yellow-50 text-l p-4 shadow-md flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <img src="{% static 'myapp/images/LOGO.jpg' %}" 
+            alt="Logo" class="h-16 w-16">
+            
+        </div>
+        <nav>
+                
+            </div>
+            <ul class="flex space-x-8  rounded-lg ">
+
+                <!-- Home Link -->
+                <li>
+                    <a href="{% url 'home' %}" class="text-gray-800e">
+                        HOME
+                    </a>
+                </li>
+            
+                <!-- Go to Dress List Button -->
+                <li>
+                    <a href="{% url 'all_myapp' %}" class="inline-flex items-center">
+                        GO TO DRESS LIST
+                    </a>
+                </li>
+            
+                <!-- About Link -->
+                <li>
+                    <a href="{% url 'about' %}" class="text-yellow-50">
+                        ABOUT
+                    </a>
+                </li>
+            
+                <!-- Contact Link -->
+                <li>
+                    <a href="{% url 'contact' %}" class="text-yellow-50">
+                        CONTACT
+                    </a>
+                </li>
+            
+                <!-- Help Center Link -->
+                <li>
+                    <a href="{% url 'help_center' %}" class="text-yellow-50 ">
+                        HELP CENTER
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

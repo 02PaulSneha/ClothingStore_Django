@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+    Contact Us | Your Company Name
+{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<main class="py-12 px-4">
+    <div class="max-w-4xl mx-auto  p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800 font-serif">GET IN TOUCH</h2>
+
+        <!-- Contact Form -->
+        <form action="#" method="POST">
+            <div class="space-y-6">
+
+               <!-- Full Name -->
+<div>
+    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+    <input type="text" id="name" name="name" required 
+           class="mt-2 p-3 border border-gray-300 rounded-lg w-full text-black" 
+           placeholder="Enter your name">
+</div>
+
+<!-- Email Address -->
+<div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+    <input type="email" id="email" name="email" required 
+           class="mt-2 p-3 border border-gray-300 rounded-lg w-full text-black" 
+           placeholder="Enter your email">
+</div>
+
+<!-- Message -->
+<div>
+    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+    <textarea id="message" name="message" required 
+              class="mt-2 p-3 border border-gray-300 rounded-lg w-full text-black" 
+              rows="6" placeholder="Enter your message"></textarea>
+</div>
+
+                <!-- Submit Button -->
+                <div class="mt-6 text-center">
+                    <button type="submit" class="py-3 px-6 rounded-lg shadow-md bg-blue-600 text-white hover:bg-blue-700 focus:outline-none transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-black text-center py-4">
+    <p>&copy; 2024 Thread By Sneha. All rights reserved.</p>
+</footer>
+
+<!-- Back Button -->
+<div class="text-center mt-4">
+    <a href="{% url 'all_myapp' %}" class="inline-flex items-center text-amber-950 hover:text-orange-500 transition duration-300">
+        &larr; Back to Dresses List
+    </a>
+</div>
+
+{% endblock %}

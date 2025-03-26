@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Dresses Page
+{% endblock title %}
+
+{% block content %}
+<h1 class="text-4xl font-bold text-transparent bg-gradient-to-r from-orange-500 via-amber-700 to-purple-800 font-serif bg-clip-text underline mb-6">
+    Choose Dresses
+</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-4">
+
+{% for myapp in dresses %}
+<div class="bg-yellow-50 p-4 rounded-xl shadow-lg">
+    <img class="rounded-xl shadow-lg w-full h-auto" src="{{ myapp.image.url }}" alt="{{ myapp.name }}">
+
+    <h3 class="text-2xl font-bold text-yellow-700 mt-4">{{ myapp.name }}</h3>
+
+    <div class="mt-2 text-xl font-semibold text-black">
+        ₹{{ myapp.price }}
+    </div>
+
+    <a href="{% url 'dress_detail' dress_id=myapp.id %}">
+        <button class="inline-flex items-center w-full justify-center px-4 py-2 mt-4 border border-transparent text-sm font-medium rounded-md text-white bg-orange-400 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-800">
+            {{ myapp.type }} - {{ myapp.id }}
+        </button>
+    </a>
+</div>
+{% endfor %}
+</div>
+
+{% endblock %}
