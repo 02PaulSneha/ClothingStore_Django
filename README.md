@@ -1,6 +1,6 @@
 ## ClothingStore Using Django
 
-ClothingStore Django is a  web application built with the Django framework. This application provides an online platform for browsing, and managing a variety of teas, complete with user authentication, and a product catalog.
+ClothingStore Django is a  web application built with the Django framework. This application provides an online platform for browsing, and managing a variety of cloths, complete with user authentication, and a product catalog.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ ClothingStore Django is a  web application built with the Django framework. This
 
 ## Features
 
-- **Product Catalog:** Browse a wide range of teas with detailed descriptions, images, and prices.
+- **Product Catalog:** Browse a wide range of cloths with detailed descriptions, images, and prices.
 - **Admin Panel:** Comprehensive backend for managing inventory, orders, and user data.
 
 ## Installation
